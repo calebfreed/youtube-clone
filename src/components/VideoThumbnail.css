@@ -1,0 +1,15 @@
+.video-tiles {
+    display: flex;
+    justify-content: center;
+
+}
+
+.tn-img-resize {
+    width: 200px;
+    height: auto;
+  }
+
+.thumbnail-grid {
+    display: flex;
+    justify-content: center;
+}

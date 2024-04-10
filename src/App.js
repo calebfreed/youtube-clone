@@ -11,8 +11,8 @@ function App() {
       <Navbar />
       <div className="content">
         <Sidebar />
-        <main>
-          <VideoThumbnail title="Sample Video" channelName="Sample Channel" />
+        <main className='thumbnails'>
+          <VideoThumbnail title="Hardcoded Video Title" channelName="Caleb's Coding" />
           
         </main>
       </div>

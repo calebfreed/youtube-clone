@@ -17,8 +17,8 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className='logo'>
-        <img src='https://t3.ftcdn.net/jpg/04/74/05/94/240_F_474059464_qldYuzxaUWEwNTtYBJ44VN89ARuFktHW.jpg' alt="YouTube Logo" />
+      <div>
+      <img src={`${process.env.PUBLIC_URL}/yt-logo.png`} alt="Logo" className='img-resize' />
       </div>
       <form className='search-form' onSubmit={handleSearchSubmit}>
         <input
