@@ -1,5 +1,5 @@
 // src/components/Navbar.js
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import './Navbar.css'
 
 function Navbar() {
@@ -18,25 +18,32 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div>
-      <img src={`${process.env.PUBLIC_URL}/yt-logo.png`} alt="Logo" className='img-resize' />
+        <a href='http://localhost:3000/'>
+        <img src={`${process.env.PUBLIC_URL}/yt-logo.png`} alt="Logo" className='img-resize' />
+        </a>
       </div>
-      <form className='search-form' onSubmit={handleSearchSubmit}>
+      <form className='search-container' onSubmit={handleSearchSubmit}>
         <input
-        type="text"
-        placeholder='Search'
-        value={searchQuery}
-        onChange={handleSearchChange}
+          type="text"
+          placeholder='Search'
+          id="search-bar"
+          value={searchQuery}
+          onChange={handleSearchChange}
         />
-        <button type="submit">Search</button>
+        <button id="search-btn" type="submit">🔍</button>
       </form>
       <div className='actions'>
+        <div>
         <button className='upload'>Upload</button>
+        <div>
+        </div>
         <button className='notification-bell'>Notifications</button>
+        </div>
         <div className='user-account'>
           <img src="tbd" alt="User Avatar" />
         </div>
       </div>
-      
+
     </nav>
   );
 }

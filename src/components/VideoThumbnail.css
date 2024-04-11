@@ -9,7 +9,15 @@
     height: auto;
   }
 
-.thumbnail-grid {
-    display: flex;
-    justify-content: center;
+.video-title{
+    font-size: 12px;
 }
+
+.channel-name{
+    font-size: 12px;
+}
+
+.video {
+    align-self: left;
+}
+

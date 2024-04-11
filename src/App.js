@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
 import VideoThumbnail from './components/VideoThumbnail';
 import './App.css';
+import videos from './data/video-list.js'
 
 function App() {
   return (
@@ -12,8 +13,10 @@ function App() {
       <div className="content">
         <Sidebar />
         <main className='thumbnails'>
-          <VideoThumbnail title="Hardcoded Video Title" channelName="Caleb's Coding" />
-          
+          {videos.map(video => (
+            <VideoThumbnail key={video.id} {...video} />
+          ))}
+
         </main>
       </div>
     </div>

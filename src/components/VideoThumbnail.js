@@ -2,19 +2,22 @@
 import React from 'react';
 import './VideoThumbnail.css'
 
-
-function VideoThumbnail({ title, channelName }) {
+function VideoThumbnail({ videoUrl, channelUrl, title, channelName, channelLogo, viewCount, timeSincePosted, thumbnail }) {
   return (
-    <div className='thumbnail-grid'>
-      <div>
-        <img src="https://www.ysofters.com/wp-content/uploads/2015/07/fbgui-hcpwd.png" alt="Video Thumbnail" className='tn-img-resize'/>
+    <div className='video'>
+      <a href={videoUrl} target='_blank' rel="noopener noreferrer">
+        <img src={thumbnail} alt="Video Thumbnail" />
+      </a>
+      <div className='video-info'>
+        <a href={channelUrl} target='_blank' rel="noopener noreferrer">
+          <img src={channelLogo} alt="Channel Logo" className='channel-logo' />
+        </a>
+        <div className='video-text'>
+          <h3>{title}</h3>
+          <p>{channelName}</p>
+          <p>{viewCount} · {timeSincePosted}</p>
+        </div>
       </div>
-      <div className='video-title'>
-        <h3>{title}</h3>
-      </div>
-      <div className='channel-name'>
-        <p>{channelName}</p>
-      </div> 
     </div>
   );
 }

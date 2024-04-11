@@ -1,4 +1,4 @@
-.App {
+.app {
   text-align: center;
 }
 
@@ -39,7 +39,55 @@
 
 .thumbnails {
   display: flex;
-  justify-content: center;
-  
-  
+  justify-content: left;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top:0px;
+  flex-direction: row;
+  padding: 50px
+}
+
+.video {
+  width: 300px;
+  height: auto;
+  border: 0px  #ccc;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-left: 50px;
+  resize: 50%;
+  background-color: clear;
+}
+
+.video img {
+  width: 100%;
+  display: flex;
+  margin: 0px;
+}
+
+.channel-logo {
+  height: 35px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+.video-info {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.video-text {
+  flex: 1;
+}
+
+.video-text h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.video-text p {
+  margin: 5px 0;
+  font-size: 0.875rem;
+  color: #666;
 }
