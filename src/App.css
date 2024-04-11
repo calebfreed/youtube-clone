@@ -39,12 +39,15 @@
 
 .thumbnails {
   display: flex;
-  justify-content: left;
+  justify-content: left ;
   margin-left: 100px;
   margin-right: 100px;
-  margin-top:0px;
+  margin-top: 50px;
   flex-direction: row;
-  padding: 50px
+  padding: auto;
+  flex-wrap: wrap;
+  flex-shrink: 1;
+  flex-grow: 1
 }
 
 .video {
@@ -56,12 +59,13 @@
   margin-left: 50px;
   resize: 50%;
   background-color: clear;
+  flex-shrink: 1;
 }
 
-.video img {
-  width: 100%;
+.video-img {
   display: flex;
   margin: 0px;
+  width: max(300px) ;
 }
 
 .channel-logo {

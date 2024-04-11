@@ -6,7 +6,7 @@ function VideoThumbnail({ videoUrl, channelUrl, title, channelName, channelLogo,
   return (
     <div className='video'>
       <a href={videoUrl} target='_blank' rel="noopener noreferrer">
-        <img src={thumbnail} alt="Video Thumbnail" />
+        <img src={thumbnail} alt="Video Thumbnail" className='video-img'/>
       </a>
       <div className='video-info'>
         <a href={channelUrl} target='_blank' rel="noopener noreferrer">

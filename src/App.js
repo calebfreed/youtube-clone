@@ -10,15 +10,12 @@ function App() {
   return (
     <div className="app">
       <Navbar />
-      <div className="content">
         <Sidebar />
         <main className='thumbnails'>
           {videos.map(video => (
             <VideoThumbnail key={video.id} {...video} />
           ))}
-
         </main>
-      </div>
     </div>
   );
 }
